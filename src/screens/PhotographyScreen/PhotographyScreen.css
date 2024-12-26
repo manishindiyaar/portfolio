@@ -1,0 +1,27 @@
+.photography-screen {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  padding-top: calc(1.5*var(--navbarHeight));
+  min-height: 100vh;
+}
+
+.photography-screen-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin: 1rem 2rem;
+  margin-bottom: 2.25rem;
+  z-index: 1;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .photography-screen-title {
+    font-size: 2rem;
+  }
+}

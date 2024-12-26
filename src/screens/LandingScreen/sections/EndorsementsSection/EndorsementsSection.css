@@ -1,0 +1,105 @@
+.endorsements-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  padding: calc(1.5*var(--navbarHeight)) 0;
+  pointer-events: none;
+}
+
+.endorsements-section-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin: 0 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.endorsements-section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.endorsements-section-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.endorsement-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 0.6rem;
+  color: var(--mainWhite);
+  text-align: center;
+  z-index: 2;
+}
+
+.endorsement-card>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.endorsement-card__image {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.endorsement-card__endorsement,
+.endorsement-card__context {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.endorsement-card__context {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1080px) {
+  .endorsements-section-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1080px) {
+  .endorsement-card {
+    flex-direction: row;
+  }
+
+  .endorsement-card>div[id="left"] {
+    width: 30%;
+    margin-right: 4rem;
+    height: 100%;
+  }
+
+  .endorsement-card>div[id="right"] {
+    width: 70%;
+    height: 100%;
+    /* align-self: flex-start; */
+  }
+}
