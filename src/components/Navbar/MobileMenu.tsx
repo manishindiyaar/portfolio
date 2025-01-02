@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./MobileMenu.css";
 import { HashLink as HLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -41,14 +41,14 @@ const MobileMenu = () => {
             journey
           </HLink>
           <div className="divider" />
-          <HLink
+          {/* <HLink
             to={"/#projects"}
             smooth
             className="navbar__menu-item "
             onClick={() => setOpen(false)}
           >
             projects
-          </HLink>
+          </HLink> */}
           <div className="divider" />
           <HLink
             to={"/#skills"}
@@ -59,14 +59,14 @@ const MobileMenu = () => {
             skills
           </HLink>
           <div className="divider" />
-          <HLink
+          {/* <HLink
             to={"/#endorsements"}
             smooth
             className="navbar__menu-item "
             onClick={() => setOpen(false)}
           >
             endorsements
-          </HLink>
+          </HLink> */}
           <div className="divider" />
           <HLink
             to={"/#contact"}
@@ -76,15 +76,15 @@ const MobileMenu = () => {
           >
             contact
           </HLink>
-          <div className="divider" />
+          {/* <div className="divider" />
           <Link to={"/photography"} className="navbar__menu-item">
             photography
-          </Link>
+          </Link> */}
           {/* <Link to={"/blog"} className="navbar__menu-item">
             blogs
           </Link> */}
           <div className="divider" />
-          <div
+          {/* <div
             className="navbar__menu-item"
             onClick={() => {
               setOpen(false);
@@ -95,7 +95,7 @@ const MobileMenu = () => {
             }}
           >
             resume
-          </div>
+          </div> */}
         </div>
         <div
           className={"mobile-menu-overlay" + (open ? " active" : "")}

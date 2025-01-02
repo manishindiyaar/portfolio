@@ -63,7 +63,7 @@ export type PhotographyAlbum = {
   description?: string;
   dir: string;
   length: number;
-  imageHashes: string[];
+  links: string[];
 };
 
 export type BlogTableEntry = {

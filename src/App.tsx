@@ -3,7 +3,7 @@ import "./App.css";
 import LandingScreen from "./screens/LandingScreen/LandingScreen";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageNotFoundScreen from "./screens/PageNotFoundScreen/PageNotFoundScreen";
-import PhotographyScreen from "./screens/PhotographyScreen/PhotographyScreen";
+// import PhotographyScreen from "./screens/PhotographyScreen/PhotographyScreen";
 import BlogScreen from "./screens/BlogScreen/BlogScreen";
 import { Coord } from "./types";
 
@@ -54,7 +54,7 @@ function App() {
               />
             }
           />
-          <Route path="/photography" element={<PhotographyScreen />} />
+          {/* <Route path="/photography" element={<PhotographyScreen />} /> */}
           <Route
             path="/blog"
             element={

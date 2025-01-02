@@ -4,7 +4,7 @@ import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as Instagram } from "../../assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { HashLink as HLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 import { motion } from "framer-motion";
 
@@ -71,14 +71,7 @@ const Navbar = () => {
         >
           journey
         </HLink>
-        <HLink
-          to={"/#projects"}
-          smooth
-          className="navbar__menu-item animated-underline"
-          aria-label="Projects"
-        >
-          projects
-        </HLink>
+      
         <HLink
           to={"/#skills"}
           smooth
@@ -87,14 +80,7 @@ const Navbar = () => {
         >
           skills
         </HLink>
-        <HLink
-          to={"/#endorsements"}
-          smooth
-          className="navbar__menu-item animated-underline"
-          aria-label="Endorsements"
-        >
-          endorsements
-        </HLink>
+       
         <HLink
           to={"/#contact"}
           smooth
@@ -103,19 +89,19 @@ const Navbar = () => {
         >
           contact
         </HLink>
-        <Link
+        {/* <Link
           to={"/photography"}
           className="navbar__menu-item animated-underline"
         >
           moments
-        </Link>
+        </Link> */}
         {/* <Link
           to={"/blog"}
           className="navbar__menu-item animated-underline"
         >
           blogs
         </Link> */}
-        <div
+        {/* <div
           className="navbar__menu-item animated-underline resume"
           onClick={() => {
             window.open(
@@ -125,7 +111,7 @@ const Navbar = () => {
           }}
         >
           resume
-        </div>
+        </div> */}
       </div>
       <MobileMenu />
     </motion.div>

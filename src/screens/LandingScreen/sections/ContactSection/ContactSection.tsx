@@ -6,7 +6,7 @@ import { ReactComponent as LinkedIn } from "../../../../assets/linkedin.svg";
 import { ReactComponent as Instagram } from "../../../../assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../../../assets/twitter.svg";
 import { motion } from "framer-motion";
-import ScreenFooter from "../../../../components/ScreenFooter/ScreenFooter";
+// import ScreenFooter from "../../../../components/ScreenFooter/ScreenFooter";
 
 type ContactSectionProps = {} & LandingPageSectionProps;
 
@@ -54,9 +54,9 @@ const ContactSection = (props: ContactSectionProps) => {
             <a
               aria-label="Email"
               className="animated-underline"
-              href="mailto:krushaybhavsar@gmail.com"
+              href="mailto:manishindiyaar@gmail.com"
             >
-              {"krushaybhavsar@gmail.com"}
+              {"manishindiyaar@gmail.com"}
             </a>
           </p>
         </div>
@@ -65,7 +65,7 @@ const ContactSection = (props: ContactSectionProps) => {
           <div className="navbar__socials-container">
             <a
               aria-label="LinkedIn"
-              href="https://www.linkedin.com/in/krushaybhavsar/"
+              href="https://www.linkedin.com/in/manishindiyaar/"
               target="_blank"
               rel="noreferrer"
               className="animated-underline"
@@ -74,7 +74,7 @@ const ContactSection = (props: ContactSectionProps) => {
             </a>
             <a
               aria-label="Twitter"
-              href="https://twitter.com/krushaybhavsar"
+              href="https://x.com/humanish_ai"
               target="_blank"
               rel="noreferrer"
               className="animated-underline"
@@ -83,7 +83,7 @@ const ContactSection = (props: ContactSectionProps) => {
             </a>
             <a
               aria-label="Instagram"
-              href="https://www.instagram.com/krushaybhavsar?igsh=MTlsYXYxN3Z4azF6bQ=="
+              href="https://www.instagram.com/mindiyaar"
               target="_blank"
               rel="noreferrer"
               className="animated-underline"
@@ -93,7 +93,7 @@ const ContactSection = (props: ContactSectionProps) => {
           </div>
         </div>
       </motion.div>
-      <ScreenFooter />
+ 
     </div>
   );
 };

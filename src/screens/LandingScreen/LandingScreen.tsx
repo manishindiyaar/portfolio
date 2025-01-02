@@ -3,10 +3,9 @@ import IntroSection from "./sections/IntroSection/IntroSection";
 import Navbar from "../../components/Navbar/Navbar";
 import { Coord } from "../../types";
 import ExperienceSection from "./sections/ExperienceSection/ExperienceSection";
-import ProjectsSection from "./sections/ProjectsSection/ProjectsSection";
 import ContactSection from "./sections/ContactSection/ContactSection";
 import SkillsSection from "./sections/SkillsSection/SkillsSection";
-import EndorsementsSection from "./sections/EndorsementsSection/EndorsementsSection";
+// import EndorsementsSection from "./sections/EndorsementsSection/EndorsementsSection";
 
 type LandingScreenProps = {
   interactiveBlobIsEnabled: boolean;
@@ -32,9 +31,9 @@ const LandingScreen = (props: LandingScreenProps) => {
         iblobEnabled={props.interactiveBlobIsEnabled}
       />
       <ExperienceSection sectionID="experience" />
-      <ProjectsSection sectionID="projects" />
+      {/* <ProjectsSection sectionID="projects" /> */}
       <SkillsSection sectionID="skills" />
-      <EndorsementsSection sectionID="endorsements" />
+      {/* <EndorsementsSection sectionID="endorsements" /> */}
       <ContactSection sectionID="contact" />
     </div>
   );

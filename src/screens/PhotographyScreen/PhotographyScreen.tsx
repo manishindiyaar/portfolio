@@ -29,10 +29,10 @@ const PhotographyScreen = (props: PhotographyScreenProps) => {
         few photos
       </motion.h1>
       {PhotographyScreenData.slice(0)
-        .reverse()
-        .map((album, index) => (
-          <PhotoAlbum key={index} album={album} index={index} />
-        ))}
+  .reverse()
+  .map((album, index) => (
+    <PhotoAlbum key={index} album={{ ...album, links: album.links }} index={index} />
+))}
       <ScreenFooter />
     </div>
   );

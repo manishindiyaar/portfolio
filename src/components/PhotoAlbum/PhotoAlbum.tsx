@@ -93,7 +93,7 @@ const PhotoAlbum = (props: PhotoAlbumProps) => {
                   src={`/photography/${props.album.dir}/${i + 1}.jpg`}
                   alt={props.album.title + " " + (i + 1)}
                   className="photo"
-                  hash={props.album.imageHashes[i]}
+                  hash={props.album.links[i]}
                 />
               </motion.div>
             ))}

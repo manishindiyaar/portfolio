@@ -66,7 +66,7 @@ const IntroSection = (props: IntroSectionProps) => {
             }}
           >
             <Link
-              to={"/#projects"}
+              to={"/#skills"}
               smooth
               className="intro-link animated-underline"
             >
@@ -77,7 +77,7 @@ const IntroSection = (props: IntroSectionProps) => {
               aria-label="Georgia Tech"
               className="intro-link animated-underline"
 
-              href="https://www.gatech.edu"
+              href="https://www.universalai.in/"
               target="_blank"
               rel="noreferrer"
             >
@@ -86,7 +86,7 @@ const IntroSection = (props: IntroSectionProps) => {
             <div className="bullet-dot" />
             
             <Link
-              to="/#skills"
+              to="/"
               smooth
               className="intro-link animated-underline"
             >
